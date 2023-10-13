@@ -2,5 +2,6 @@
 * The feature to show the screen selecting apps to discourage added.
 * The feature to show all apps from discouraging added.
 
-
+## 0.0.2
+* add platform to pubspec.yaml.
 
