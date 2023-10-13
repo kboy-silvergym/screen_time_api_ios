@@ -1,6 +1,6 @@
 name: screen_time_api_ios
 description: A Flutter plugin for using iOS ScreenTime API
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/kboy-silvergym/screen_time_api_ios
 
 environment:

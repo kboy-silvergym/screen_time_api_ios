@@ -3,5 +3,7 @@
 * The feature to show all apps from discouraging added.
 
 ## 0.0.2
-* add platform to pubspec.yaml.
+* Add platform to pubspec.yaml.
 
+## 0.03
+* Update README.md

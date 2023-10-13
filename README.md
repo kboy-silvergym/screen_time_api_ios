@@ -1,12 +1,18 @@
-# ScreenTime API plugin for Flutter
-A Flutter plugin for using iOS ScreenTime API.
+![](doc/thumb.png)
+
+# Screen Time API plugin for Flutter
+A Flutter plugin for using Screen Time API. Only iOS is supported.
+
+# What is iOS Screen Time API?
+- [Screen Time | Apple Developer Documentation](https://developer.apple.com/documentation/screentime)
+- [Meet the Screen Time API - WWDC21 - Videos](https://developer.apple.com/videos/play/wwdc2021/10123/)
+- [What's new in Screen Time API - WWDC22 - Videos](https://developer.apple.com/videos/play/wwdc2022/110336/)
 
 # Features
-* Show the screen selecting apps to discourage added.
-* Show all apps from discouraging added.
+* Show the screen selecting apps to discourage.
+* Show all apps from discouraging.
 
 ![](doc/demo.gif)
-
 
 # Getting Started
 
