@@ -34,31 +34,35 @@ public class ScreenTimeApiIosPlugin: NSObject, FlutterPlugin {
     }
     
     func showController() {
-        let scenes = UIApplication.shared.connectedScenes
-        let windowScene = scenes.first as? UIWindowScene
-        let windows = windowScene?.windows
-        let controller = windows?.filter({ (w) -> Bool in
-            return w.isHidden == false
-        }).first?.rootViewController as? FlutterViewController
-        
-        // アプリ選択のUIを出す
-        let selectAppVC: UIViewController = UIHostingController(rootView: ContentView())
-        selectAppVC.navigationItem.rightBarButtonItem = UIBarButtonItem(
-            barButtonSystemItem: .close,
-            target: self,
-            action: #selector(self.onPressClose)
-        )
-        let naviVC = UINavigationController(rootViewController: selectAppVC)
-        controller?.present(naviVC, animated: true, completion: nil)
+        DispatchQueue.main.async {
+            let scenes = UIApplication.shared.connectedScenes
+            let windowScene = scenes.first as? UIWindowScene
+            let windows = windowScene?.windows
+            let controller = windows?.filter({ (w) -> Bool in
+                return w.isHidden == false
+            }).first?.rootViewController as? FlutterViewController
+            
+            // アプリ選択のUIを出す
+            let selectAppVC: UIViewController = UIHostingController(rootView: ContentView())
+            selectAppVC.navigationItem.rightBarButtonItem = UIBarButtonItem(
+                barButtonSystemItem: .close,
+                target: self,
+                action: #selector(self.onPressClose)
+            )
+            let naviVC = UINavigationController(rootViewController: selectAppVC)
+            controller?.present(naviVC, animated: true, completion: nil)
+        }
     }
     
     func dismiss(){
-        let scenes = UIApplication.shared.connectedScenes
-        let windowScene = scenes.first as? UIWindowScene
-        let windows = windowScene?.windows
-        let controller = windows?.filter({ (w) -> Bool in
-            return w.isHidden == false
-        }).first?.rootViewController as? FlutterViewController
-        controller?.dismiss(animated: true, completion: nil)
+        DispatchQueue.main.async {
+            let scenes = UIApplication.shared.connectedScenes
+            let windowScene = scenes.first as? UIWindowScene
+            let windows = windowScene?.windows
+            let controller = windows?.filter({ (w) -> Bool in
+                return w.isHidden == false
+            }).first?.rootViewController as? FlutterViewController
+            controller?.dismiss(animated: true, completion: nil)
+        }
     }
 }
