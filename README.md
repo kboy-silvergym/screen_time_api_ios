@@ -10,7 +10,7 @@ A Flutter plugin for using Screen Time API. Only iOS is supported.
 
 # Features
 * Show the screen selecting apps to discourage.
-* Show all apps from discouraging.
+* Release all apps from discouraging.
 
 ![](doc/demo.gif)
 
@@ -35,14 +35,14 @@ A Flutter plugin for using Screen Time API. Only iOS is supported.
 
 # Usage
 
-### select apps To discourage
+### Select apps To discourage
 
 ```dart
 final _screenTimeApiIosPlugin = ScreenTimeApiIos();
 _screenTimeApiIosPlugin.selectAppsToDiscourage();
 ```
 
-### Encourage all apps (Release restrictions)
+### Release all apps from discouraging
 
 ```dart
 final _screenTimeApiIosPlugin = ScreenTimeApiIos();
