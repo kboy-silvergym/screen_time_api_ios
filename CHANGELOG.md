@@ -5,5 +5,5 @@
 ## 0.0.2
 * Add platform to pubspec.yaml.
 
-## 0.03
+## 0.0.3
 * Update README.md
